@@ -8,8 +8,8 @@ public class GameManager : MonoBehaviour {
 	public ShipController shipController;
 
 	[Header ("Essentials")]
-	public int startingGold;
-	public int currentGold;
+	public float startingGold;
+	public float currentGold;
 
 	[Header ("Time and Date")]
 	public float hour;

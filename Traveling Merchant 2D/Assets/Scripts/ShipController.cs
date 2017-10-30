@@ -8,16 +8,19 @@ public class ShipController : MonoBehaviour {
 	private Vector3 target;
 	public bool moving;
 	public Rigidbody shipRigidBody;
+    public bool tradeScreen;
 
 	void Start () {
 		target = transform.position;
 	}
 
 	void Update () {
-		if (Input.GetMouseButton (0)) {
-			target = Camera.main.ScreenToWorldPoint (Input.mousePosition);
-			target.z = transform.position.z;
-		} 
+        if (tradeScreen == false) {
+            if (Input.GetMouseButton(0)) {
+                target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                target.z = transform.position.z;
+            }
+        }
 		shipRigidBody.AddForce (Vector3.MoveTowards (transform.position, target, speed * Time.deltaTime) - transform.position, ForceMode.VelocityChange);
 		//shipRigidBody.position = Vector3.MoveTowards (transform.position, target, speed * Time.deltaTime);
 		moving = shipRigidBody.velocity.magnitude > 0.2;
