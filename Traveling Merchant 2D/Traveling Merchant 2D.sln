@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Traveling Merchant 2D", "As
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Traveling Merchant 2D", "Assembly-CSharp.csproj", "{8E19A137-A613-721D-130B-8466F21E9971}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Traveling Merchant 2D", "Assembly-CSharp-Editor.csproj", "{A99EE24C-B63F-B540-6A26-3DF706D540D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{8E19A137-A613-721D-130B-8466F21E9971}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E19A137-A613-721D-130B-8466F21E9971}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E19A137-A613-721D-130B-8466F21E9971}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A99EE24C-B63F-B540-6A26-3DF706D540D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A99EE24C-B63F-B540-6A26-3DF706D540D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A99EE24C-B63F-B540-6A26-3DF706D540D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A99EE24C-B63F-B540-6A26-3DF706D540D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

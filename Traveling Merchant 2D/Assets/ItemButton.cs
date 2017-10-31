@@ -7,9 +7,10 @@ public class ItemButton : MonoBehaviour
     public Button button;
     public Text nameLabel;
     public Text priceLabel;
+	public Text amountLabel;
     public Image iconImage;
 
-    private Item item;
+    private ShopItems item;
     private TradeScrollList scrollList;
 
     void Start()
@@ -17,12 +18,13 @@ public class ItemButton : MonoBehaviour
         button.onClick.AddListener(HandleClick);
     }
 
-    public void Setup(Item currentItem, TradeScrollList currentScrollList)
+    public void Setup(ShopItems currentItem, TradeScrollList currentScrollList)
     {
         item = currentItem;
         nameLabel.text = item.itemName;
         priceLabel.text = item.price.ToString();
         iconImage.sprite = item.icon;
+		amountLabel.text = item.amount.ToString();
 
         scrollList = currentScrollList;
 

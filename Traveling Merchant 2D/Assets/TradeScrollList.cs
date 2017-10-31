@@ -5,17 +5,18 @@ using UnityEngine.UI;
 using System;
 
 [System.Serializable]
-public class Item
+public class ShopItems
 {
     public string itemName;
     public Sprite icon;
     public float price = 1f;
+	public float amount = 1f;
 
 }
 
 public class TradeScrollList : MonoBehaviour {
 
-    public List<Item> itemList;
+	public List<ShopItems> itemList;
     public Transform contentPanel;
     public TradeScrollList otherShop;
     public Text currentGoldText;
@@ -38,7 +39,7 @@ public class TradeScrollList : MonoBehaviour {
     {
         for (int i = 0; i < itemList.Count; i++)
         {
-            Item item = itemList[i];
+            ShopItems item = itemList[i];
             GameObject newButton = buttonObjectPool.GetObject();
             newButton.transform.SetParent(contentPanel);
 
@@ -56,7 +57,7 @@ public class TradeScrollList : MonoBehaviour {
         }
     }
 
-    public void TryTransferItemToPlayerInventory (Item item)
+    public void TryTransferItemToPlayerInventory (ShopItems item)
     {
         if (gameManager.currentGold >= item.price)
         {
@@ -69,12 +70,12 @@ public class TradeScrollList : MonoBehaviour {
         }
     }
 
-    private void AddItem(Item itemToAdd, TradeScrollList tradeList)
+    private void AddItem(ShopItems itemToAdd, TradeScrollList tradeList)
     {
         tradeList.itemList.Add(itemToAdd);
     }
 
-    private void RemoveItem (Item itemToRemove, TradeScrollList tradeList)
+    private void RemoveItem (ShopItems itemToRemove, TradeScrollList tradeList)
     {
         for (int i = tradeList.itemList.Count - 1; i >=0; i--)
         {
