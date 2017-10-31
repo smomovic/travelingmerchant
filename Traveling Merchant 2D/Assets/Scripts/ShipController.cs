@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class ShipController : MonoBehaviour {
 
@@ -9,14 +10,16 @@ public class ShipController : MonoBehaviour {
 	public bool moving;
 	public Rigidbody shipRigidBody;
     public bool tradeScreen;
+	public ParticleSystem clickSplash;
 
 	void Start () {
+		
 		target = transform.position;
 	}
 
 	void Update () {
         if (tradeScreen == false) {
-            if (Input.GetMouseButton(0)) {
+			if (Input.GetMouseButton(0) && !EventSystem.current.IsPointerOverGameObject()) {
                 target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 target.z = transform.position.z;
             }

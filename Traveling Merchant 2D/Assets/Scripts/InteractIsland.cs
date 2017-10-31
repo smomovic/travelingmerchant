@@ -21,11 +21,8 @@ public class InteractIsland : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Space))
         {
                 trading = true;
+				shipController.speed = 0;
         }
-        if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                trading = false;
-            }
         }
         if (trading == true)
         {
@@ -39,7 +36,11 @@ public class InteractIsland : MonoBehaviour {
             playerInventory.SetActive(false);
             shipController.tradeScreen = false;
         }
-
+		if (Input.GetKeyDown(KeyCode.Escape))
+		{
+			trading = false;
+			shipController.speed = 25;
+		}
     }
 
 	void OnTriggerEnter(Collider other)
@@ -52,5 +53,6 @@ public class InteractIsland : MonoBehaviour {
 	{
 		interactIcon.SetActive (false);
         tradable = false;
+		trading = false;
 	}
 }
