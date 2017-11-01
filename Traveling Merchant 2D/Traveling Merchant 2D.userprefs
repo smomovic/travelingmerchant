@@ -1,17 +1,17 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\AstarPathfindingProject\Readme.txt">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ShopItemLists.cs">
     <Files>
-      <File FileName="Assets\Standard Assets\2D\Scripts\Camera2DFollow.cs" Line="19" Column="39" />
-      <File FileName="Assets\TradeScrollList.cs" Line="33" Column="59" />
-      <File FileName="Assets\SimpleObjectPool.cs" Line="35" Column="43" />
-      <File FileName="Assets\ItemButton.cs" Line="26" Column="32" />
-      <File FileName="Assets\Scripts\IslandNameGenerator.cs" Line="13" Column="2" />
-      <File FileName="Assets\Scripts\IslandNames.cs" Line="7" Column="1" />
-      <File FileName="Assets\Scripts\GameManager.cs" Line="31" Column="3" />
-      <File FileName="Assets\Scripts\InteractIsland.cs" Line="36" Column="18" />
-      <File FileName="Assets\Scripts\ShipController.cs" Line="27" Column="3" />
-      <File FileName="Assets\AstarPathfindingProject\Readme.txt" Line="1" Column="1" />
+      <File FileName="Assets\Standard Assets\2D\Scripts\Camera2DFollow.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\IslandNameGenerator.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\IslandNames.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GameManager.cs" Line="63" Column="4" />
+      <File FileName="Assets\Scripts\InteractIsland.cs" Line="26" Column="28" />
+      <File FileName="Assets\Scripts\ShipController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ParticleMouseFollow.cs" Line="24" Column="3" />
+      <File FileName="Assets\Scripts\SimpleObjectPool.cs" Line="19" Column="10" />
+      <File FileName="Assets\Scripts\ItemHolder.cs" Line="8" Column="18" />
+      <File FileName="Assets\Scripts\ShopItemLists.cs" Line="24" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

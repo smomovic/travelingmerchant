@@ -7,6 +7,7 @@ public class InteractIsland : MonoBehaviour {
 	public GameObject interactIcon;
     public GameObject playerInventory;
     public GameObject islandInventory;
+	public ShopItemLists shopItemList;
     public bool tradable;
     public ShipController shipController;
     public bool trading;
@@ -20,11 +21,12 @@ public class InteractIsland : MonoBehaviour {
         { 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-                trading = true;
+               trading = true;
 				shipController.speed = 0;
+				Debug.Log ("Trading!");
         }
         }
-        if (trading == true)
+		if (trading == true)
         {
             islandInventory.SetActive(true);
             playerInventory.SetActive(true);
@@ -32,14 +34,18 @@ public class InteractIsland : MonoBehaviour {
         }
         if (trading == false)
         {
+			if(islandInventory.activeSelf)
+			{
             islandInventory.SetActive(false);
             playerInventory.SetActive(false);
             shipController.tradeScreen = false;
+			}
         }
 		if (Input.GetKeyDown(KeyCode.Escape))
 		{
 			trading = false;
 			shipController.speed = 25;
+			Debug.Log ("Not Trading Anymore!");
 		}
     }
 

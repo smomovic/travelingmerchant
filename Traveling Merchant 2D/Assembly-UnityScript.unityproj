@@ -6,10 +6,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{8E19A137-A613-721D-130B-8466F21E9971}</ProjectGuid>
+    <ProjectGuid>{B9FB1D18-49CE-A93E-2D1F-86F0CF194469}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>Assembly-UnityScript</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>Assets</BaseDirectory>
@@ -46,21 +46,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\CameraMovementWithKeys.cs" />
-     <Compile Include="Assets\Scripts\DestroyObject.cs" />
-     <Compile Include="Assets\Scripts\GameManager.cs" />
-     <Compile Include="Assets\Scripts\InteractIsland.cs" />
-     <Compile Include="Assets\Scripts\Inventory.cs" />
-     <Compile Include="Assets\Scripts\IslandNameGenerator.cs" />
-     <Compile Include="Assets\Scripts\IslandNames.cs" />
-     <Compile Include="Assets\Scripts\ItemButton.cs" />
-     <Compile Include="Assets\Scripts\ItemHolder.cs" />
-     <Compile Include="Assets\Scripts\ParticleMouseFollow.cs" />
-     <Compile Include="Assets\Scripts\ShipController.cs" />
-     <Compile Include="Assets\Scripts\ShopItemLists.cs" />
-     <Compile Include="Assets\Scripts\SimpleObjectPool.cs" />
-     <Compile Include="Assets\Scripts\SpawnIslands.cs" />
-     <Compile Include="Assets\Scripts\TradeScrollList.cs" />
+     <Compile Include="Assets\Scripts\Full Camera Java Script\CameraSettings.js" />
+     <Compile Include="Assets\Scripts\Full Camera Java Script\DoubleClickDetector.js" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

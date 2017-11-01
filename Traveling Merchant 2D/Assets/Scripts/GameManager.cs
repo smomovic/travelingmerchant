@@ -52,9 +52,9 @@ public class GameManager : MonoBehaviour {
 			mainCamera.GetComponent<Camera2DFollow> ().enabled = false;
 			mainCamera.GetComponent<CameraMovementWithKeys> ().enabled = true;
 		}
-		if (Input.GetKey(KeyCode.I))
+		if (Input.GetKeyDown(KeyCode.I))
 		{
-			playerInventory.SetActive(true);
+			playerInventory.SetActive(!playerInventory.activeSelf);
 		}
 
 		if (shipController.moving == false)
@@ -85,7 +85,7 @@ public class GameManager : MonoBehaviour {
 				month = 1;
 			}
 		}
-		gold.text = currentGold.ToString() +"g";
+		gold.text = currentGold.ToString("") +" Gold";
 		shipName.text = shipNameText;
 		shipCaptainName.text = captainNameText;
 		shipMovementSpeed.text = shipController.speed.ToString () + " km/h";

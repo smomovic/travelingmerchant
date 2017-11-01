@@ -11,6 +11,8 @@ public class CameraMovementWithKeys : MonoBehaviour {
 	public float zoomSpeed;
 	public GameObject ship;
 	public Camera camera;
+	public float smoothingFactor;
+	public bool smoothing;
 
 	// Use this for initialization
 	void Start () {
