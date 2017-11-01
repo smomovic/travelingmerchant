@@ -15,7 +15,7 @@ public class SpawnIslands : MonoBehaviour {
 	public int column;
 	public int row;
 
-	void Start () {
+    void Start () {
 		                 //OLD SPAWN
 		//for(int maxIslands = 0; maxIslands < numberOfIslands ; maxIslands++)
 		//{
@@ -23,24 +23,27 @@ public class SpawnIslands : MonoBehaviour {
 		//	Instantiate (ArcticIsland, pos, transform.rotation);
 		//}
 
+    
 
 		column = width / zoneWidth;
 		row = height / zoneWidth;
-
-		for (int z = 0; z < row; z++) {  
-			for (int x = 0; x < column; x++)     {   
-				int pointX = startX +  x * zoneWidth + Random.Range(2, zoneWidth); 
-				int pointZ = startZ + z * zoneWidth + Random.Range(2, zoneWidth);   
-				Vector2 pos = new Vector2 (pointX, pointZ);
-				Instantiate (islands[Random.Range(0, islands.Length)], pos, transform.rotation);
-
+        CreateIsland();
+       
+}
+    public void CreateIsland()
+        {
+		for (int z = 0; z<row; z++) {  
+			for (int x = 0; x<column; x++)     {   
+				int pointX = startX + x * zoneWidth + Random.Range(2, zoneWidth);
+    int pointZ = startZ + z * zoneWidth + Random.Range(2, zoneWidth);
+    Vector2 pos = new Vector2(pointX, pointZ);
+    GameObject islandsParent = Instantiate(islands[Random.Range(0, islands.Length)], pos, transform.rotation);
 			} 
 		}
 	}
 	
 
 	void Update () {
-		
 		
 	}
 }

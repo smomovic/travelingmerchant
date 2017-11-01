@@ -1,0 +1,4 @@
+﻿Island'lar oluşturulurken ardaşık ID'ler ve kendi içi boşi listleri ile oluşuturuluyor.
+Itemların hepsi dışarıda bir ana listeye giriliyor, hangi islanda gidebilecekleri işaretleniyor.
+Islandlar oyun başlar başlamaz ana listeden kendi islandı için olanlardan rastgele itemları kendisine kopyalıyor.
+Oyuncu ada ile interakt olmak için tuşa bastığı zaman sistem adanın ID'sini kontrol ediyor, o gameobject'in içerisindeki items listesini mevcut UI'ı boşaltıp yazdırıyor.
