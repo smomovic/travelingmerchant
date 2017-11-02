@@ -46,11 +46,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\PlayerInventory.cs" />
      <Compile Include="Assets\Scripts\CameraMovementWithKeys.cs" />
      <Compile Include="Assets\Scripts\DestroyObject.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\InteractIsland.cs" />
      <Compile Include="Assets\Scripts\Inventory.cs" />
+     <Compile Include="Assets\Scripts\Island.cs" />
      <Compile Include="Assets\Scripts\IslandNameGenerator.cs" />
      <Compile Include="Assets\Scripts\IslandNames.cs" />
      <Compile Include="Assets\Scripts\ItemButton.cs" />
@@ -61,6 +63,12 @@
      <Compile Include="Assets\Scripts\SimpleObjectPool.cs" />
      <Compile Include="Assets\Scripts\SpawnIslands.cs" />
      <Compile Include="Assets\Scripts\TradeScrollList.cs" />
+     <None Include="Assets\Plugins\StylizedWater\Shaders\StylizedWater_mobile_advanced.shader" />
+     <None Include="Assets\Plugins\StylizedWater\Changelog.txt" />
+     <None Include="Assets\Word.txt" />
+     <None Include="Assets\Plugins\StylizedWater\Shaders\StylizedWater_mobile_basic.shader" />
+     <None Include="Assets\Plugins\StylizedWater\Shaders\StylizedWater_desktop.shader" />
+     <None Include="Assets\Plugins\StylizedWater\Shaders\StylizedWater_desktop_tesselation.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

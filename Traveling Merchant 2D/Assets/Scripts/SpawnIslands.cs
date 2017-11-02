@@ -37,7 +37,7 @@ public class SpawnIslands : MonoBehaviour {
 				int pointX = startX + x * zoneWidth + Random.Range(2, zoneWidth);
     int pointZ = startZ + z * zoneWidth + Random.Range(2, zoneWidth);
     Vector2 pos = new Vector2(pointX, pointZ);
-    GameObject islandsParent = Instantiate(islands[Random.Range(0, islands.Length)], pos, transform.rotation);
+    Instantiate(islands[Random.Range(0, islands.Length)], pos, transform.rotation);
 			} 
 		}
 	}

@@ -11,7 +11,7 @@
       <File FileName="Assets\Scripts\ParticleMouseFollow.cs" Line="24" Column="3" />
       <File FileName="Assets\Scripts\SimpleObjectPool.cs" Line="19" Column="10" />
       <File FileName="Assets\Scripts\ItemHolder.cs" Line="8" Column="18" />
-      <File FileName="Assets\Scripts\ShopItemLists.cs" Line="24" Column="3" />
+      <File FileName="Assets\Scripts\ShopItemLists.cs" Line="15" Column="45" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

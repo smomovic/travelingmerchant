@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class SimpleObjectPool : MonoBehaviour
 {
     // the prefab that this object pool returns instances of
-    public GameObject prefab;
+    public GameObject shopButton;
     // collection of currently inactive instances of the prefab
     private Stack<GameObject> inactiveInstances = new Stack<GameObject>();
 
@@ -23,7 +23,7 @@ public class SimpleObjectPool : MonoBehaviour
         // otherwise, create a new instance
         else
         {
-            spawnedGameObject = (GameObject)GameObject.Instantiate(prefab);
+            spawnedGameObject = (GameObject)GameObject.Instantiate(shopButton);
 
             // add the PooledObject component to the prefab so we know it came from this pool
             PooledObject pooledObject = spawnedGameObject.AddComponent<PooledObject>();

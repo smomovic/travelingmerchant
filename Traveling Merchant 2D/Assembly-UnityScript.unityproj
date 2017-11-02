@@ -48,6 +48,12 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Full Camera Java Script\CameraSettings.js" />
      <Compile Include="Assets\Scripts\Full Camera Java Script\DoubleClickDetector.js" />
+     <None Include="Assets\Plugins\StylizedWater\Shaders\StylizedWater_mobile_advanced.shader" />
+     <None Include="Assets\Plugins\StylizedWater\Changelog.txt" />
+     <None Include="Assets\Word.txt" />
+     <None Include="Assets\Plugins\StylizedWater\Shaders\StylizedWater_mobile_basic.shader" />
+     <None Include="Assets\Plugins\StylizedWater\Shaders\StylizedWater_desktop.shader" />
+     <None Include="Assets\Plugins\StylizedWater\Shaders\StylizedWater_desktop_tesselation.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

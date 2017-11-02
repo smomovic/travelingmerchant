@@ -11,6 +11,9 @@ public class InteractIsland : MonoBehaviour {
     public bool tradable;
     public ShipController shipController;
     public bool trading;
+	public GameObject shopItemHolderPrefab;
+	public Transform shopGrid;
+	public Island currentIsland;
 
 	void Start () {
 	}
@@ -24,6 +27,7 @@ public class InteractIsland : MonoBehaviour {
                trading = true;
 				shipController.speed = 0;
 				Debug.Log ("Trading!");
+				FillList ();
         }
         }
 		if (trading == true)
@@ -52,6 +56,7 @@ public class InteractIsland : MonoBehaviour {
 	void OnTriggerEnter(Collider other)
 	{
 		interactIcon.SetActive(true);
+		currentIsland = other.GetComponent<Island> ();
         tradable = true;
 	}
 
@@ -60,5 +65,27 @@ public class InteractIsland : MonoBehaviour {
 		interactIcon.SetActive (false);
         tradable = false;
 		trading = false;
+	}
+
+	void FillList()
+	{
+		foreach (Transform t in shopGrid) 
+		{
+			Destroy (t.gameObject);
+		}
+		for(int i = 0; i < currentIsland.item.Count; i++)
+		{
+			GameObject holder = Instantiate (shopItemHolderPrefab, shopGrid);
+
+			ItemHolder holderScript = holder.GetComponent<ItemHolder> ();
+
+			holderScript.itemName.text = currentIsland.item [i].itemType.name;
+			holderScript.itemIcon.sprite = currentIsland.item [i].itemType.icon;
+			holderScript.itemAmount.text = currentIsland.item [i].amount.ToString("0") + "x";
+			holderScript.itemPrice.text = currentIsland.item [i].price.ToString("0") + " Gold";
+
+
+
+		}	
 	}
 }
